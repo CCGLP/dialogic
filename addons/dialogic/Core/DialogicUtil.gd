@@ -777,6 +777,8 @@ static func get_autoload_signal_suggestions(filter:String, autoload_name:String)
 					suggestions[filter] = {'value': filter, 'editor_icon':["GuiScrollArrowRight", "EditorIcons"]}
 
 					return suggestions
+	
+	return suggestions
 
 
 static func get_audio_bus_suggestions(_filter:= "") -> Dictionary:
