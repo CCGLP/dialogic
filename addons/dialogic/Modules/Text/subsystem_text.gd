@@ -244,6 +244,7 @@ func show_textbox(instant:=false, identifier:=active_textbox) -> void:
 			text_node.textbox_root.show()
 	if dialogic.Animations.is_animating():
 		await dialogic.Animations.finished
+	if not emitted:
 		textbox_visibility_changed.emit(true)
 		emitted = true
 
